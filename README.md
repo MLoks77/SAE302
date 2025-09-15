@@ -1,5 +1,5 @@
 # SAE302
-<h1>SAE302, site web pour un webdocumentaire, sur un tournoi de rubix cube</h1>
+<h1>SAE302, site web pour un webdocumentaire, sur une compétition de Rubik's cube</h1>
 
 Site réalisé en :
 - HTML+CSS
