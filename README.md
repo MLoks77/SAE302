@@ -2,7 +2,7 @@
 <h1>SAE302, site web pour un webdocumentaire, sur une compétition de Rubik's cube</h1>
 
 Site réalisé en :
-- HTML+CSS
+- HTML+SCSS
 - TAILWIND
 - JAVASCRIPT
 - three js mini
