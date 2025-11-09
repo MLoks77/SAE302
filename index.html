@@ -23,6 +23,10 @@
 <body id="landingpage" class="bg-black">
   <main>
 
+    <video autoplay muted loop class="fixed right-0 bottom-0 min-w-full min-h-full object-cover z-0">
+      <source src="images/videos/660G0163.mp4" type="video/mp4">
+    </video>
+
     <div class="min-h-screen w-full flex items-center justify-center overflow-hidden bg-transparent">
       <div class="grid grid-cols-3 grid-rows-3 gap-[1.3vw] sm:gap-[1vw] md:gap-[0.8vw]
                 w-[90vw] h-[90vw] max-w-[480px] max-h-[480px] min-w-[270px] min-h-[270px] aspect-square z-10
@@ -86,111 +90,114 @@
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script>
-      const cubeOrder = [
-        "INTERVIEW",
-        "AUDIO",
-        "HISTOIRE",
-        "ARTICLE",
-        "GALERIE",
-        "CUBE",
-        "EPREUVES",
-        "INFOGRAPHIE"
-      ];
 
-      const rubikPalette = [
-        "#E00000", // rouge
-        "#FFD500", // jaune
-        "#0045AD", // bleu
-        "#009B48", // vert
-        "#FF5900", // orange
-      ];
 
-      const cubeColorById = {
-        INTERVIEW: "#E00000", // rouge
-        AUDIO: "#FFD500",     // jaune
-        HISTOIRE: "#0045AD",  // bleu
-        ARTICLE: "#009B48",   // vert
-        GALERIE: "#FF5900",   // orange
-        CUBE: "#0045AD",      // bleu (non-blanc pour bien voir le changement)
-        EPREUVES: "#E00000",   // rouge (réutilisé)
-        INFOGRAPHIE: "#009B48"  // vert (réutilisé)
-      };
-
-      // Couleur de hover configurable
-      const hoverColor = "#000000";
-
-      // Baseline: toutes les cases en blanc au démarrage
-      cubeOrder.forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.style.backgroundColor = "#FFFFFF";
-      });
-
-      // Timeline GSAP qui fait défiler les cases
-      // Chaque case prend sa couleur associée puis revient au blanc avant la suivante
-      let currentActiveEl = null;
-      const tl = gsap.timeline({ repeat: -1, defaults: { ease: "power4.inOut" } });
-      const setAllTilesWhite = () => {
-        cubeOrder.forEach(id2 => {
-          const el2 = document.getElementById(id2);
-          if (el2) gsap.set(el2, { backgroundColor: "#FFFFFF" });
-        });
-      };
-      tl.eventCallback("onRepeat", setAllTilesWhite);
-      cubeOrder.forEach(id => {
-        const color = cubeColorById[id];
-        const el = document.getElementById(id);
-        if (!el || !color) return;
-        tl.to(el, { backgroundColor: color, duration: 0.6, onStart() { currentActiveEl = el; } }) // changer la vitesse de vitesse
-          .to(el, { backgroundColor: "#FFFFFF", duration: 0.6 });
-      });
-
-      // Pause sur hover et forçage de la couleur associée sans casser la timeline
-      const hoverTweenByEl = new WeakMap();
-      const hoverSnapshot = { time: 0, activeEl: null, activeColor: null };
-      cubeOrder.forEach(id => {
-        const el = document.getElementById(id);
-        if (!el) return;
-
-        el.addEventListener("mouseenter", () => {
-          // Snapshot de l'état courant
-          hoverSnapshot.time = tl.time();
-          hoverSnapshot.activeEl = currentActiveEl;
-          hoverSnapshot.activeColor = currentActiveEl ? gsap.getProperty(currentActiveEl, "backgroundColor") : null;
-
-          tl.pause();
-          // Si une autre case était active, on la met en blanc temporairement
-          if (currentActiveEl && currentActiveEl !== el) {
-            gsap.set(currentActiveEl, { backgroundColor: "#FFFFFF" });
-          }
-          const existing = hoverTweenByEl.get(el);
-          if (existing) existing.kill();
-          const t = gsap.to(el, { backgroundColor: (hoverColor ?? cubeColorById[id]), duration: 0.2, overwrite: false });
-          hoverTweenByEl.set(el, t);
-        });
-
-        el.addEventListener("mouseleave", () => {
-          const existing = hoverTweenByEl.get(el);
-          if (existing) existing.kill();
-          // La case survolée redevient blanche (on nettoie la prop pour ne pas heurter la timeline)
-          gsap.set(el, { clearProps: "backgroundColor" });
-          // Reprise exactement à l'instant du pause, évite les sauts
-          tl.time(hoverSnapshot.time).play();
-        });
-      });
-
-      document.addEventListener("visibilitychange", () => {
-        if (document.hidden) {
-          tl.pause();
-        } else {
-          tl.play();
-        }
-      });
-    </script>
-
-    <script src="js/main.js"></script>
   </main>
 </body>
 
 </html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<script>
+  const cubeOrder = [
+    "INTERVIEW",
+    "AUDIO",
+    "HISTOIRE",
+    "ARTICLE",
+    "GALERIE",
+    "CUBE",
+    "EPREUVES",
+    "INFOGRAPHIE"
+  ];
+
+  const rubikPalette = [
+    "#E00000", // rouge
+    "#FFD500", // jaune
+    "#0045AD", // bleu
+    "#009B48", // vert
+    "#FF5900", // orange
+  ];
+
+  const cubeColorById = {
+    INTERVIEW: "#E00000", // rouge
+    AUDIO: "#FFD500",     // jaune
+    HISTOIRE: "#0045AD",  // bleu
+    ARTICLE: "#009B48",   // vert
+    GALERIE: "#FF5900",   // orange
+    CUBE: "#0045AD",      // bleu (non-blanc pour bien voir le changement)
+    EPREUVES: "#E00000",   // rouge (réutilisé)
+    INFOGRAPHIE: "#009B48"  // vert (réutilisé)
+  };
+
+  // Couleur de hover configurable
+  const hoverColor = "#000000";
+
+  // Baseline: toutes les cases en blanc au démarrage
+  cubeOrder.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.backgroundColor = "#FFFFFF";
+  });
+
+  // Timeline GSAP qui fait défiler les cases
+  // Chaque case prend sa couleur associée puis revient au blanc avant la suivante
+  let currentActiveEl = null;
+  const tl = gsap.timeline({ repeat: -1, defaults: { ease: "power4.inOut" } });
+  const setAllTilesWhite = () => {
+    cubeOrder.forEach(id2 => {
+      const el2 = document.getElementById(id2);
+      if (el2) gsap.set(el2, { backgroundColor: "#FFFFFF" });
+    });
+  };
+  tl.eventCallback("onRepeat", setAllTilesWhite);
+  cubeOrder.forEach(id => {
+    const color = cubeColorById[id];
+    const el = document.getElementById(id);
+    if (!el || !color) return;
+    tl.to(el, { backgroundColor: color, duration: 0.6, onStart() { currentActiveEl = el; } }) // changer la vitesse de vitesse
+      .to(el, { backgroundColor: "#FFFFFF", duration: 0.6 });
+  });
+
+  // Pause sur hover et forçage de la couleur associée sans casser la timeline
+  const hoverTweenByEl = new WeakMap();
+  const hoverSnapshot = { time: 0, activeEl: null, activeColor: null };
+  cubeOrder.forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    el.addEventListener("mouseenter", () => {
+      // Snapshot de l'état courant
+      hoverSnapshot.time = tl.time();
+      hoverSnapshot.activeEl = currentActiveEl;
+      hoverSnapshot.activeColor = currentActiveEl ? gsap.getProperty(currentActiveEl, "backgroundColor") : null;
+
+      tl.pause();
+      // Si une autre case était active, on la met en blanc temporairement
+      if (currentActiveEl && currentActiveEl !== el) {
+        gsap.set(currentActiveEl, { backgroundColor: "#FFFFFF" });
+      }
+      const existing = hoverTweenByEl.get(el);
+      if (existing) existing.kill();
+      const t = gsap.to(el, { backgroundColor: (hoverColor ?? cubeColorById[id]), duration: 0.2, overwrite: false });
+      hoverTweenByEl.set(el, t);
+    });
+
+    el.addEventListener("mouseleave", () => {
+      const existing = hoverTweenByEl.get(el);
+      if (existing) existing.kill();
+      // La case survolée redevient blanche (on nettoie la prop pour ne pas heurter la timeline)
+      gsap.set(el, { clearProps: "backgroundColor" });
+      // Reprise exactement à l'instant du pause, évite les sauts
+      tl.time(hoverSnapshot.time).play();
+    });
+  });
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      tl.pause();
+    } else {
+      tl.play();
+    }
+  });
+</script>
+
+<script src="js/main.js"></script>
