@@ -36,17 +36,323 @@
       <source src="../images/videos/accueil_cut.mp4" type="video/mp4">
     </video>
     <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-      <h1 class="text-[150px] font-bold">Epreuves</h1>
+      <h1 class="text-[150px] font-bold rubik-mono">Epreuves</h1>
     </div>
   </div>
 
-  <div class="grid grid-cols-5 grid-rows-1 gap-4">
-    <div ><img src="" class="" id="2x2"></div>
-    <div ><img src="" class="" id="3x3"></div>
-    <div ><img src="" class="" id="4x4"></div>
-    <div ><img src="" class="" id="pyraminx"></div>
-    <div ><img src="" class="" id="blind"></div>
-</div>
+  <section class="bg-[#FFE646] py-10">
+    <div class="mx-[5%] md:mx-[25%]">
+      <h1 class="rubik-mono text-left text-[25px]">Comment se déroule une compétition ?</h1>
+      <p>
+        Lors d'une compétition officielle, les concurrents s'inscrivent et apportent leurs propres rubik cube, qui
+        seront mélangés par des <em>scramblers</em>. Chaque épreuve est supervisée par des juges, un délégué officiel de
+        <br> la WCA ( World Cube Association ) et une équipe d'organisation qui veille à la bonne application des règles. Les
+        compétiteurs effectuent leurs essais sur appel, respectent un temps limite, et leurs résultats sont enregistrés
+        et validés immédiatement. L'ambiance est sérieuse mais conviviale, et les officiels et concurrents peuvent
+        occuper plusieurs rôles pendant l'événement.
+      </p>
+      <a href="https://www.worldcubeassociation.org/regulations" target="_blank"
+        class="mt-3 inline-block px-6 py-2 rounded-full bg-[#40A2FF] text-white font-semibold text-lg shadow-md transition-colors hover:bg-[#2D8FFF] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#2D8FFF] mt-4">
+        Voir les règles officielles
+      </a>
+    </div>
+  </section>
+
+  <div class="flex justify-center items-center border-t border-b border-black py-3 px-2 bg-[#2D8FFF]">
+    <div class="grid grid-cols-5 gap-8">
+      <button
+        class="epreuve-btn cursor-pointer flex flex-col justify-center items-center p-3 transition-transform hover:scale-105"
+        data-section="2x2">
+        <img src="../images/epreuvesicons/222.png" class="w-[80px] h-[80px] object-contain mx-auto" alt="2x2">
+        <span class="mt-2 text-black font-medium">2x2</span>
+      </button>
+      <button
+        class="epreuve-btn cursor-pointer flex flex-col justify-center items-center p-3 transition-transform hover:scale-105"
+        data-section="3x3">
+        <img src="../images/epreuvesicons/333.png" class="w-[80px] h-[80px] object-contain mx-auto" alt="3x3">
+        <span class="mt-2 text-black font-medium">3x3</span>
+      </button>
+      <button
+        class="epreuve-btn cursor-pointer flex flex-col justify-center items-center p-3 transition-transform hover:scale-105"
+        data-section="4x4">
+        <img src="../images/epreuvesicons/444.png" class="w-[80px] h-[80px] object-contain mx-auto" alt="4x4">
+        <span class="mt-2 text-black font-medium">4x4</span>
+      </button>
+      <button
+        class="epreuve-btn cursor-pointer flex flex-col justify-center items-center p-3 transition-transform hover:scale-105"
+        data-section="pyraminx">
+        <img src="../images/epreuvesicons/pyraminx.png" class="w-[80px] h-[80px] object-contain mx-auto" alt="Pyraminx">
+        <span class="mt-2 text-black font-medium">Pyraminx</span>
+      </button>
+      <button
+        class="epreuve-btn cursor-pointer flex flex-col justify-center items-center p-3 transition-transform hover:scale-105"
+        data-section="blindfolded">
+        <img src="../images/epreuvesicons/333blindfolded.png" class="w-[80px] h-[80px] object-contain mx-auto"
+          alt="Blindfolded">
+        <span class="mt-2 text-black font-medium">Blindfolded</span>
+      </button>
+    </div>
+  </div>
+
+  <section id="sectiontexte" class="bg-[#FFE646] pb-10">
+    <!--2x2-->
+    <section id="2x2" class="transition-all duration-300 ease-in-out">
+      <div class="flex flex-row items-center space-x-4">
+        <img src="../images/epreuvesicons/222.png" alt="2x2" class="w-32 h-32 md:ml-8 md:mt-3" />
+        <h1 class="text-2xl font-semibold text-[32px] rubik-mono">Le 2x2</h1>
+        <hr class="flex-1 border-t border-black mr-3">
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center w-full md:space-x-4 mt-5">
+        <div class="flex justify-center items-center h-full md:order-1 order-1">
+          <hr class="border-black h-full min-h-[120px] mx-2 hidden md:block" style="border-left-width: 1px;">
+        </div>
+        <div class="flex flex-col flex-1 min-w-[200px] space-y-4 md:order-2 order-2">
+          <div class="ml-3">
+            <h2 class="text-xl font-bold">Qu'est-ce que le 2x2 ?</h2>
+            <p class="text-base">
+              Le 2x2, aussi appelé Pocket Cube, est la version la plus simple du Rubik's Cube. Il possède seulement 8
+              coins et aucun centre ni arête, ce qui le rend accessible aux débutants tout en restant intéressant pour
+              les compétiteurs expérimentés.
+            </p>
+          </div>
+          <div class="ml-3">
+            <h2 class="text-xl font-bold">Pourquoi essayer le 2x2 ?</h2>
+            <p class="text-base">
+              Cette épreuve est parfaite pour découvrir le speedcubing ou s’entraîner à améliorer sa rapidité
+              d’exécution. Les temps y sont très rapides et les algorithmes, plus courts qu’en 3x3, permettent de se
+              concentrer sur la dextérité et l’anticipation.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center w-full md:w-auto md:mt-0 md:order-3 order-3">
+          <img src="../images/placeholder.png" alt="2x2"
+            class=" object-contain w-125 h-125 mx-auto md:w-[420px] md:h-[220px] lg:w-[550px] lg:h-[220px] transition-all" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 3x3 -->
+    <section id="3x3" class="hidden transition-all duration-300 ease-in-out">
+      <div class="flex flex-row items-center space-x-4">
+        <img src="../images/epreuvesicons/333.png" alt="3x3" class="w-32 h-32 md:ml-8 md:mt-3" />
+        <h1 class="text-2xl font-semibold text-[32px] rubik-mono">Le 3x3</h1>
+        <hr class="flex-1 border-t border-black mr-3">
+      </div>
+      <div class="flex flex-col w-full mt-5">
+        <div class="flex flex-col md:flex-row md:items-center md:space-x-4 w-full">
+          <div class="flex justify-center items-center h-full md:order-1 order-1">
+            <hr class="border-black h-full min-h-[120px] mx-2 hidden md:block" style="border-left-width: 1px;">
+          </div>
+          <div class="flex flex-col flex-1 min-w-[200px] space-y-4 md:order-2 order-2">
+            <div class="ml-3">
+              <h2 class="text-xl font-bold">L'épreuve reine du speedcubing</h2>
+              <p class="text-base">
+                Le 3x3, ou Rubik's Cube, est le puzzle emblématique qui a lancé la passion du speedcubing dans le monde
+                entier. À la fois simple dans sa forme et incroyablement profond dans ses possibilités, il met à
+                l’épreuve
+                la rapidité, la logique et la capacité d’adaptation des compétiteurs. Résoudre le 3x3 demande une grande
+                dextérité, de l’observation et du sang-froid, aussi bien chez les débutants que chez les champions.
+              </p>
+            </div>
+            <div class="ml-3">
+              <h2 class="text-xl font-bold">Méthodes de résolution variées</h2>
+              <p class="text-base">
+                Le 3x3 peut être résolu grâce à différentes méthodes reconnues, comme CFOP, Roux ou ZZ. Chacune possède
+                ses propres techniques, algorithmes et stratégies pour optimiser les mouvements et gagner en rapidité.
+                Le
+                choix de la méthode dépend du style du cuber et de ses objectifs, mais toutes exigent de la pratique, de
+                la rigueur et une réflexion stratégique pour progresser vers la résolution parfaite.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center w-full mt-4 md:mt-8">
+          <img src="../images/epreuvesimg/3x3.png" alt="3x3"
+            class="object-contain w-125 h-125 mx-auto md:w-[700px] md:h-[260px] lg:w-[900px] lg:h-[360px] transition-all" />
+          <p class="text-gray-700 text-base mt-2 text-center">
+            Luke Griesser, 3e au 3x3 du Championnat Nord-Américain 2024
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4x4 -->
+    <section id="4x4" class="hidden transition-all duration-300 ease-in-out">
+      <div class="flex flex-row items-center space-x-4">
+        <img src="../images/epreuvesicons/444.png" alt="4x4" class="w-32 h-32 md:ml-8 md:mt-3" />
+        <h1 class="text-2xl font-semibold text-[32px] rubik-mono">Le 4x4</h1>
+        <hr class="flex-1 border-t border-black mr-3">
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center w-full md:space-x-4 mt-5">
+        <div class="flex justify-center items-center h-full md:order-1 order-1">
+          <hr class="border-black h-full min-h-[120px] mx-2 hidden md:block" style="border-left-width: 1px;">
+        </div>
+        <div class="flex flex-col flex-1 min-w-[200px] space-y-4 md:order-2 order-2">
+          <div class="ml-3">
+            <h2 class="text-xl font-bold">Un défi supplémentaire pour les passionnés</h2>
+            <p class="text-base">
+              Le Rubik's Cube 4x4, aussi appelé "Rubik's Revenge", va bien au-delà du classique 3x3. Avant de pouvoir
+              entamer la résolution finale, il faut d'abord reconstituer les centres et jumeler les arêtes, ce qui
+              demande rigueur, anticipation et une excellente gestion des pièces. Cette complexité supplémentaire en
+              fait une épreuve très appréciée des amateurs de challenges techniques.
+            </p>
+          </div>
+          <div class="ml-3">
+            <h2 class="text-xl font-bold">La parité : une énigme unique</h2>
+            <p class="text-base">
+              Le 4x4 introduit des situations inédites, appelées cas de parité, qui ne peuvent pas apparaître sur un
+              cube à nombre de faces impair. Ces particularités exigent d’apprendre des algorithmes spécifiques pour
+              être résolues efficacement. Maîtriser ces cas est indispensable pour progresser et viser des temps rapides
+              au 4x4.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center w-full md:w-auto md:mt-0 md:order-3 order-3">
+          <img src="../images/epreuvesimg/4x4.jpg" alt="4x4"
+            class="mt-3 object-contain w-[350px] h-[350px] mx-auto md:w-[550px] md:h-[350px] lg:w-[700px] lg:h-[350px] transition-all" />
+          <p class="text-gray-700 text-base mt-2">Participant de l'édition Chevry Miel 2025 en 4x4</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pyraminx -->
+    <section id="pyraminx" class="hidden transition-all duration-300 ease-in-out">
+      <div class="flex flex-row items-center space-x-4">
+        <img src="../images/epreuvesicons/pyraminx.png" alt="Pyraminx" class="w-32 h-32 md:ml-8 md:mt-3" />
+        <h1 class="text-2xl font-semibold text-[32px] rubik-mono">Le Pyraminx</h1>
+        <hr class="flex-1 border-t border-black mr-3">
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center w-full md:space-x-4 mt-5">
+        <div class="flex justify-center items-center h-full md:order-1 order-1">
+          <hr class="border-black h-full min-h-[120px] mx-2 hidden md:block" style="border-left-width: 1px;">
+        </div>
+        <div class="flex flex-col flex-1 min-w-[200px] space-y-4 md:order-2 order-2">
+          <div class="ml-3">
+            <h2 class="text-xl font-bold">Un puzzle pyramidal fascinant</h2>
+            <p class="text-base">
+              Le Pyraminx est un casse-tête en forme de tétraèdre, se distinguant nettement des cubes classiques par sa
+              géométrie originale. Sa résolution met à l’épreuve la réflexion, l’observation et la rapidité. Les
+              meilleurs parviennent à résoudre le Pyraminx en moins de 5 secondes, ce qui en fait une épreuve
+              spectaculaire à regarder.
+            </p>
+          </div>
+          <div class="ml-3">
+            <h2 class="text-xl font-bold">Des mécanismes uniques</h2>
+            <p class="text-base">
+              Les pointes du Pyraminx peuvent tourner indépendamment, ce qui ajoute de la facilité pour la mise en place
+              initiale. La résolution commence souvent par l’alignement des sommets, avant de se concentrer sur le cœur
+              du puzzle, nécessitant des techniques propres à cette épreuve.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center w-full md:w-auto md:mt-0 md:order-3 order-3">
+          <img src="../images/placeholder.png" alt="Pyraminx"
+            class="object-contain w-125 h-125 mx-auto md:w-[420px] md:h-[220px] lg:w-[550px] lg:h-[220px] transition-all" />
+          <p class="text-gray-700 text-base mt-2">Description de l'image Pyraminx (placeholder).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blindfolded -->
+    <section id="blindfolded" class="hidden transition-all duration-300 ease-in-out">
+      <div class="flex flex-row items-center space-x-4">
+        <img src="../images/epreuvesicons/333blindfolded.png" alt="Blindfolded" class="w-32 h-32 md:ml-8 md:mt-3" />
+        <h1 class="text-2xl font-semibold text-[32px] rubik-mono">Blindfolded</h1>
+        <hr class="flex-1 border-t border-black mr-3">
+      </div>
+      <div class="flex flex-col w-full mt-5">
+        <div class="flex flex-col md:flex-row md:items-center md:space-x-4 w-full">
+          <div class="flex justify-center items-center h-full md:order-1 order-1">
+            <hr class="border-black h-full min-h-[120px] mx-2 hidden md:block" style="border-left-width: 1px;">
+          </div>
+          <div class="flex flex-col flex-1 min-w-[200px] space-y-4 md:order-2 order-2">
+            <div class="ml-3">
+              <h2 class="text-xl font-bold">Résoudre les yeux fermés</h2>
+              <p class="text-base">
+                Cette épreuve saisissante consiste à mémoriser l'intégralité du cube puis à le résoudre sans aucune
+                vision
+                les yeux bandés. Un véritable défi qui mobilise une remarquable maîtrise, une grande capacité de
+                mémorisation et une concentration absolue. Les meilleurs parviennent à résoudre un Rubik’s Cube dans ces
+                conditions en moins de deux minutes !
+              </p>
+            </div>
+            <div class="ml-3">
+              <h2 class="text-xl font-bold">Stratégies de mémorisation et de résolution</h2>
+              <p class="text-base">
+                Pour réussir, les compétiteurs utilisent des méthodes sophistiquées comme la célèbre « M2/Old Pochmann
+                »,
+                reposant sur des cycles et des associations de lettres ou d’histoires pour mémoriser l’emplacement de
+                chaque pièce. La résolution aveugle met ainsi à l’épreuve aussi bien la logique que la créativité pour
+                créer la meilleure méthode de mémorisation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center w-full space-y-6 mt-4 md:flex-row md:space-y-0 md:space-x-6 md:mt-8">
+          <div class="flex flex-col items-center w-full md:w-1/2">
+            <img src="../images/epreuvesimg/charle1.png" alt="Blindfolded"
+              class="object-contain w-125 h-125 mx-auto md:w-[700px] md:h-[320px] lg:w-[900px] lg:h-[420px] transition-all mt-3" />
+            <p class="text-gray-700 text-base mt-2 text-center italic">
+              Charles Daloz-Baltenberger, détenteur du record Europe en 3x3 blindfold,<br>
+              Chevry Miel 2025
+            </p>
+          </div>
+          <div class="flex flex-col items-center w-full md:w-1/2">
+            <img src="../images/epreuvesimg/charle2isnta.png" alt="Blindfolded"
+              class="object-contain w-125 h-125 mx-auto md:w-[700px] md:h-[320px] lg:w-[900px] lg:h-[420px] transition-all" />
+            <p class="text-gray-700 text-base mt-2 text-center italic">
+              Post instagram du compte
+              <a class="underline cursor-pointer "
+                href="https://www.instagram.com/p/DQUmz4rjQ_Y/?igsh=MWIybnQxczF1cGpsaw=="
+                target="_blank">AFspeedcubing</a>
+              célébrant <br>le nouveau record de Charles Daloz-Baltenberger.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const sectionIds = ['2x2', '3x3', '4x4', 'pyraminx', 'blindfolded'];
+      const buttons = document.querySelectorAll('.epreuve-btn');
+      const sections = sectionIds.map(id => document.getElementById(id));
+
+      function updateSections(showId) {
+        sectionIds.forEach((id, idx) => {
+          const section = sections[idx];
+          if (section) {
+            if (id === showId) {
+              section.classList.remove('hidden');
+            } else {
+              section.classList.add('hidden');
+            }
+          }
+        });
+        buttons.forEach(btn => {
+          const target = btn.getAttribute('data-section');
+          const mapped = (target === "blind") ? "blindfolded" : target;
+          if (mapped === showId) {
+            btn.style.opacity = "1";
+          } else {
+            btn.style.opacity = "0.5";
+          }
+        });
+      }
+      updateSections('2x2');
+      buttons.forEach(btn => {
+        btn.addEventListener('click', function () {
+          const target = btn.getAttribute('data-section');
+          // "blind" --> "blindfolded"
+          const mapped = (target === "blind") ? "blindfolded" : target;
+          updateSections(mapped);
+        });
+      });
+    });
+  </script>
+
 
   <!-- FOOTER -->
   <footer class="bg-black pt-3">
@@ -154,3 +460,75 @@
 </html>
 
 <script src="../js/main.js"></script>
+<script>
+
+  // Sélecteurs des boutons et des sections
+  const buttons = document.querySelectorAll('.grid button');
+  const sections = [
+    document.querySelector('#2x2'),
+    document.querySelector('#3x3'),
+    document.querySelector('#4x4'),
+    document.querySelector('#pyraminx'),
+    document.querySelector('#blindfolded')
+  ];
+
+  // Assigner les boutons à leur section correspondante
+  const btnIdToSectionId = {
+    '2x2': '2x2',
+    '3x3': '3x3',
+    '4x4': '4x4',
+    'pyraminx': 'pyraminx',
+    'blind': 'blindfolded'
+  };
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', function () {
+      // Identifier le bouton cliqué via l'id de l'image à l'intérieur
+      const img = btn.querySelector('img');
+      if (!img || !btnIdToSectionId[img.id]) return;
+      const sectionId = btnIdToSectionId[img.id];
+
+      // Gestion affichage sections
+      sections.forEach(section => {
+        if (section.id === sectionId) {
+          section.classList.remove('hidden');
+        } else {
+          section.classList.add('hidden');
+        }
+      });
+
+      // Gestion opacité boutons
+      buttons.forEach(otherBtn => {
+        const otherImg = otherBtn.querySelector('img');
+        if (otherImg && btnIdToSectionId[otherImg.id] === sectionId) {
+          otherBtn.style.opacity = "1";
+        } else {
+          otherBtn.style.opacity = "0.5";
+        }
+      });
+
+    });
+  });
+
+  // Initialisation: afficher la section 2x2, les autres masquées, et mettre opacité par défaut
+  window.addEventListener('DOMContentLoaded', () => {
+    sections.forEach(section => {
+      if (section.id === '2x2') {
+        section.classList.remove('hidden');
+      } else {
+        section.classList.add('hidden');
+      }
+    });
+    buttons.forEach(btn => {
+      const img = btn.querySelector('img');
+      if (img && img.id === '2x2') {
+        btn.style.opacity = "1";
+      } else {
+        btn.style.opacity = "0.5";
+      }
+    });
+  });
+
+
+
+</script>
