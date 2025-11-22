@@ -1,4 +1,23 @@
-.rubik-mono {
+
+
+@font-face {
+  font-family: 'Swiss';
+  src: url('font/Swiss721BT-RomanCondensed.woff2') format('woff2'),
+       url('font/Swiss721BT-RomanCondensed.woff') format('woff'),
+       url('font/Swiss721CondensedRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.Swiss {
+  font-family: 'Swiss', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+ .rubik-mono {
   font-family: "Rubik Mono One", monospace;
   font-weight: 400;
   font-style: normal;
