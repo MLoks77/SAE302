@@ -21,19 +21,18 @@
 
     <title>Audio - Le cube</title>
 
-<style>
+    <style>
+        .responsive-mt8-ml0 {
+            margin-right: 15px;
+        }
 
-.responsive-mt8-ml0 {
-    margin-right: 15px;
-  }
-
-@media (max-width: 640px) {
-  .responsive-mt8-ml0 {
-    margin-top: 2rem !important;
-    margin-left: 0 !important;
-  }
-}
-</style>
+        @media (max-width: 640px) {
+            .responsive-mt8-ml0 {
+                margin-top: 2rem !important;
+                margin-left: 0 !important;
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-black">
@@ -51,18 +50,33 @@
         </div>
     </div>
 
-    <a href="../index.html" class="flex flex-row items-center space-x-2 no-underline">
-        <div
-            class="fixed top-4 left-4 z-50 flex flex-row items-center bg-black backdrop-blur-sm shadow-lg px-4 py-2 hover:scale-105 transition-all">
-
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white"
-                stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+    <div class="fixed top-4 left-4 z-50 flex flex-row items-center gap-3">
+        <a href="../index.html" class="flex flex-row items-center space-x-2 no-underline">
+            <div
+                class="flex flex-row items-center bg-black backdrop-blur-sm shadow-lg px-4 py-2 hover:scale-105 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white"
+                    stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+                <span class="rubik-mono text-white font-bold text-[18px]">Accueil</span>
+            </div>
+        </a>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+            class="flex items-center bg-black ml-2 cursor-pointer backdrop-blur-sm shadow-lg px-4 py-3 hover:scale-105 transition-all"
+            title="Retour en haut">
+            <svg fill="#ffffff" height="200px" width="200px" version="1.1" id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"
+                xml:space="preserve" stroke="#ffffff" class="h-6 w-6">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <polygon
+                        points="7,12 7,11 9,11 9,9 11,9 11,21 13,21 13,9 15,9 15,11 17,11 17,12 19,12 19,9 17,9 17,7 15,7 15,5 14,5 14,4 13,4 13,3 11,3 11,4 10,4 10,5 9,5 9,7 7,7 7,9 5,9 5,12 ">
+                    </polygon>
+                </g>
             </svg>
-            <span class="rubik-mono text-white font-bold text-[18px]">Accueil</span>
-
-        </div>
-    </a>
+        </button>
+    </div>
 
     <!-- landing  -->
     <div class="flex items-center justify-center h-screen">
@@ -83,10 +97,10 @@
                     <!-- Album Cover -->
                     <img src="../images/videos/cube.gif" alt="Chevry Miel 2025"
                         class="w-40 h-40 sm:w-64 sm:h-64 md:w-full md:h-[400px] lg:h-[460px] mx-auto rounded-lg mb-4 object-cover"
-                        style="max-width:100%;"
-                    >
+                        style="max-width:100%;">
                     <!-- Song Title -->
-                    <h2 class="text-lg text-white sm:text-xl font-semibold md:text-left text-center Rubiko w-full">Chevry Miel 2025</h2>
+                    <h2 class="text-lg text-white sm:text-xl font-semibold md:text-left text-center Rubiko w-full">
+                        Chevry Miel 2025</h2>
                     <!-- Artist Name -->
                     <p class="text-white text-xs sm:text-sm md:text-left text-center w-full">Maxime Derènes</p>
                     <!-- Audio Tag, hidden, for JS control -->
@@ -138,8 +152,7 @@
                 </div>
             </div>
 
-            <div id="text" class="w-full flex-1 text-left flex flex-col gap-6 responsive-mt8-ml0"
-                >
+            <div id="text" class="w-full flex-1 text-left flex flex-col gap-6 responsive-mt8-ml0">
                 <h1
                     class="mt-6 border-l-2 border-white pl-3 sm:pl-5 rubik-mono text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2 sm:mb-3 w-full md:text-left">
                     L'ambiance d'une compétition
@@ -148,8 +161,11 @@
                     <img id="ambiance-img" src="../images/public.png" alt="Ambiance de la compétition"
                         class="rounded-lg shadow-lg  sm:w-96  md:w-[500px] md:max-w-[500px] md:h-[350px] object-cover mb-4 sm:mr-6 sm:mb-0"
                         style="display: block;">
-                    <p class="Montserrat text-base sm:text-lg md:text-xl leading-relaxed text-white w-full md:text-left md:ml-0 text-left max-w-2xl mx-auto">
-                        Dès l'entrée dans la salle, on ressent l'excitation ainsi que la tension d'une compétition qui flottent dans l'air, rythmées par le cliquetis frénétique des cubes et les discussions entre compétiteurs.<br><br>
+                    <p
+                        class="Montserrat text-base sm:text-lg md:text-xl leading-relaxed text-white w-full md:text-left md:ml-0 text-left max-w-2xl mx-auto">
+                        Dès l'entrée dans la salle, on ressent l'excitation ainsi que la tension d'une compétition qui
+                        flottent dans l'air, rythmées par le cliquetis frénétique des cubes et les discussions entre
+                        compétiteurs.<br><br>
                         Dans cet audio, on vous emmène avec nous à travers cette compétition.
                     </p>
                 </div>
@@ -276,7 +292,6 @@
 </html>
 
 <script src="../js/main.js"></script>
-
 <script>
     // --- Audio Player Logic ---
     const audio = document.getElementById('audioElement');

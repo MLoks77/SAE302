@@ -37,18 +37,33 @@
     </div>
   </div>
 
-  <a href="../index.html" class="flex flex-row items-center space-x-2 no-underline">
-    <div
-      class="fixed top-4 left-4 z-50 flex flex-row items-center bg-black backdrop-blur-sm shadow-lg px-4 py-2 hover:scale-105 transition-all">
-
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white"
-        stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+  <div class="fixed top-4 left-4 z-50 flex flex-row items-center gap-3">
+    <a href="../index.html" class="flex flex-row items-center space-x-2 no-underline">
+      <div
+        class="flex flex-row items-center bg-black backdrop-blur-sm shadow-lg px-4 py-2 hover:scale-105 transition-all">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="rubik-mono text-white font-bold text-[18px]">Accueil</span>
+      </div>
+    </a>
+    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+      class="flex items-center bg-black ml-2 cursor-pointer backdrop-blur-sm shadow-lg px-4 py-3 hover:scale-105 transition-all"
+      title="Retour en haut">
+      <svg fill="#ffffff" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve" stroke="#ffffff"
+        class="h-6 w-6">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <polygon
+            points="7,12 7,11 9,11 9,9 11,9 11,21 13,21 13,9 15,9 15,11 17,11 17,12 19,12 19,9 17,9 17,7 15,7 15,5 14,5 14,4 13,4 13,3 11,3 11,4 10,4 10,5 9,5 9,7 7,7 7,9 5,9 5,12 ">
+          </polygon>
+        </g>
       </svg>
-      <span class="rubik-mono text-white font-bold text-[18px]">Accueil</span>
-
-    </div>
-  </a>
+    </button>
+  </div>
 
   <!-- landing  -->
   <div class="flex items-center justify-center h-screen">
@@ -75,42 +90,50 @@
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/placeholder.png" alt="podium 1"
-                class="w-full h-full object-fill hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="Podium 1" data-description=" " />
+                class="w-full h-full object-fill hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="Podium 1" data-description=" " />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">Podium 1</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/placeholder.png" alt="podium 2"
-                class="w-full object-cover h-full hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="Podium 2" data-description=" " />
+                class="w-full object-cover h-full hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="Podium 2" data-description=" " />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">Podium 2</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/placeholder.png" alt="podium 3"
-                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="Podium 3" data-description=" " />
+                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="Podium 3" data-description=" " />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">Podium 3</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/placeholder.png" alt="podium 4"
-                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="Podium 4" data-description=" " />
+                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="Podium 4" data-description=" " />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">Podium 4</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/placeholder.png" alt="podium 5"
-                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="Podium 5" data-description=" " />
+                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="Podium 5" data-description=" " />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">Podium 5</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/placeholder.png" alt="podium 6"
-                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="Podium 6" data-description=" " />
+                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="Podium 6" data-description=" " />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">Podium 6</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/placeholder.png" alt="podium 7"
-                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="Podium 7" data-description=" " />
+                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="Podium 7" data-description=" " />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">Podium 7</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/placeholder.png" alt="podium 8"
-                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="Podium 8" data-description=" " />
+                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="Podium 8" data-description=" " />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">Podium 8</figcaption>
             </figure>
           </div>
@@ -134,42 +157,57 @@
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis1.jpg" alt="tapis & timers 1"
-                class="w-full h-full object-fill hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="tapis & timers 1" data-description="Un tapis de la marque QYToys, offert à un participant du championnat de france de Tigery en mai 2023."/>
+                class="w-full h-full object-fill hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="tapis & timers 1"
+                data-description="Un tapis de la marque QYToys, offert à un participant du championnat de france de Tigery en mai 2023." />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers 1</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis2.jpg" alt="tapis & timers 2"
-                class="w-full object-cover h-full hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="tapis & timers 2" data-description="Un tapis de la marque YuXin Toys, connue pour ses produits de qualité et populaires chez de nombreux speedcubers."/>
+                class="w-full object-cover h-full hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="tapis & timers 2"
+                data-description="Un tapis de la marque YuXin Toys, connue pour ses produits de qualité et populaires chez de nombreux speedcubers." />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers 2</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis3.jpg" alt="tapis & timers 3"
-                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="tapis & timers 3" data-description="Le stackmat G5 est largement utilisée en speedcubing, appréciée pour sa précision et son look."/>
+                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="tapis & timers 3"
+                data-description="Le stackmat G5 est largement utilisée en speedcubing, appréciée pour sa précision et son look." />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers 3</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis4.jpg" alt="tapis & timers 4"
-                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="tapis & timers 4" data-description="Un tapis simple Gancube Gan et un timer"/>
+                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="tapis & timers 4" data-description="Un tapis simple Gancube Gan et un timer" />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers 4</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis5.jpg" alt="tapis & timers 5"
-                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="tapis & timers 5" data-description="Un tapis Gancube Gan avec plus de motifs sur l'univers du rubik's cube et des puzzles, accompagné d'un timer."/>
+                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="tapis & timers 5"
+                data-description="Un tapis Gancube Gan avec plus de motifs sur l'univers du rubik's cube et des puzzles, accompagné d'un timer." />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers 5</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis6.jpg" alt="tapis & timers 6"
-                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="tapis & timers 6" data-description="Tapis QY Toys, une marque connue pour ses accessoires de speedcubing accessibles."/>
+                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="tapis & timers 6"
+                data-description="Tapis QY Toys, une marque connue pour ses accessoires de speedcubing accessibles." />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers 6</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis7.jpg" alt="tapis & timers 7"
-                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="tapis & timers 7" data-description="Tapis Atoutcubes, une marque française spécialisée dans le speedcubing."/>
+                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="tapis & timers 7"
+                data-description="Tapis Atoutcubes, une marque française spécialisée dans le speedcubing." />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers 7</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white flex flex-col">
               <img src="../images/imggallerie/tapis8.jpg" alt="tapis & timers 8"
-                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="tapis & timers 8" data-description="Tapis MoYu, une marque chinoise réputée pour ses produits de speedcubing."/>
+                class="w-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="tapis & timers 8"
+                data-description="Tapis MoYu, une marque chinoise réputée pour ses produits de speedcubing." />
               <figcaption class="text-center py-2 text-[15px] text-gray-600 rubik-mono">tapis & timers 8</figcaption>
             </figure>
           </div>
@@ -198,44 +236,60 @@
             ">
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white col-span-2 md:col-span-2 flex flex-col">
               <img src="../images/imggallerie/cube4.jpg" alt="Une rangée de cube"
-                class="w-full h-full object-fill hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="Une rangée de cube" data-description="Du 3x3 au 7x7"/>
+                class="w-full h-full object-fill hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="Une rangée de cube" data-description="Du 3x3 au 7x7" />
               <figcaption class="text-center py-8 text-[15px] text-gray-600 rubik-mono">Une rangée de cube</figcaption>
             </figure>
-            <figure class="overflow-hidden rounded-xl shadow-lg bg-white col-span-2 md:col-span-2 md:col-start-3 flex flex-col">
+            <figure
+              class="overflow-hidden rounded-xl shadow-lg bg-white col-span-2 md:col-span-2 md:col-start-3 flex flex-col">
               <img src="../images/imggallerie/cube2.jpg" alt="Le matériel d'entretien pour un cube"
-                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="Le matériel d'entretien pour un cube" data-description="Boîte du 3x3 Moyu WRM V10, des lubrifiants pour cube, des petits tournevis, tout le matériel nécessaire pour entretenir son cube."/>
-              <figcaption class="text-center py-8 text-[15px] text-gray-600 rubik-mono">Matériel d'entretien</figcaption>
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="Le matériel d'entretien pour un cube"
+                data-description="Boîte du 3x3 Moyu WRM V10, des lubrifiants pour cube, des petits tournevis, tout le matériel nécessaire pour entretenir son cube." />
+              <figcaption class="text-center py-8 text-[15px] text-gray-600 rubik-mono">Matériel d'entretien
+              </figcaption>
             </figure>
-            <figure class="overflow-hidden rounded-xl shadow-lg bg-white row-span-2 md:row-span-2 md:row-start-2 flex flex-col">
+            <figure
+              class="overflow-hidden rounded-xl shadow-lg bg-white row-span-2 md:row-span-2 md:row-start-2 flex flex-col">
               <img src="../images/imggallerie/cube3.jpg" alt="Un sac de speedcuber"
-                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="Un sac de speedcuber" data-description="Un speedcuber ramène ses propres rubik's cubes et son matériel à une compétition."/>
-              <figcaption class="text-center py-8 text-[15px] text-gray-600 rubik-mono">Un sac de speedcuber</figcaption>
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="Un sac de speedcuber"
+                data-description="Un speedcuber ramène ses propres rubik's cubes et son matériel à une compétition." />
+              <figcaption class="text-center py-8 text-[15px] text-gray-600 rubik-mono">Un sac de speedcuber
+              </figcaption>
             </figure>
             <figure
               class="overflow-hidden rounded-xl shadow-lg bg-white row-span-2 md:row-span-2 md:col-start-4 md:row-start-2 flex flex-col">
               <img src="../images/imggallerie/cube9.jpg" alt="La tour de cube"
-                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                loading="lazy" data-caption="La tour de cube" data-description="Malgré l'augmentation du nombre de tranches, la taille du cube reste la même." /><!-- droite -->
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="La tour de cube"
+                data-description="Malgré l'augmentation du nombre de tranches, la taille du cube reste la même." /><!-- droite -->
               <figcaption class="text-center py-8 text-[15px] text-gray-600 rubik-mono">La tour de cube</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white md:col-start-2 md:row-start-2 flex flex-col">
               <img src="../images/imggallerie/cube5.jpg" alt="pyraminx"
-                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="pyraminx" data-description="Un cube pyraminx. Forme triangulaire, résolution originale."/>
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="pyraminx"
+                data-description="Un cube pyraminx. Forme triangulaire, résolution originale." />
               <figcaption class="text-center py-4 text-[15px] text-gray-600 rubik-mono">Cube pyraminx</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white md:col-start-3 md:row-start-2 flex flex-col">
               <img src="../images/imggallerie/cube6.jpg" alt="megaminx"
-                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="megaminx" data-description="Cube megaminx. Dodécagone avec 12 faces uniques."/>
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="megaminx" data-description="Cube megaminx. Dodécagone avec 12 faces uniques." />
               <figcaption class="text-center py-4 text-[15px] text-gray-600 rubik-mono">Cube megaminx</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white md:col-start-2 md:row-start-3 flex flex-col">
               <img src="../images/imggallerie/cube7.jpg" alt="FTO"
-                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="FTO" data-description="Cube FTO. Axes de rotation diagonaux, défie pour les experts."/>
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="FTO" data-description="Cube FTO. Axes de rotation diagonaux, défie pour les experts." />
               <figcaption class="text-center py-4 text-[15px] text-gray-600 rubik-mono">Cube FTO</figcaption>
             </figure>
             <figure class="overflow-hidden rounded-xl shadow-lg bg-white md:col-start-3 md:row-start-3 flex flex-col">
               <img src="../images/imggallerie/cube1.jpg" alt="Cube mirror 3x3"
-                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" data-caption="Cube mirror 3x3" data-description="Cube mirror 3x3. Les pièces ont toutes des tailles différentes."/>
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
+                data-caption="Cube mirror 3x3"
+                data-description="Cube mirror 3x3. Les pièces ont toutes des tailles différentes." />
               <figcaption class="text-center py-4 text-[15px] text-gray-600 rubik-mono">Cube mirror 3x3</figcaption>
             </figure>
           </div>
@@ -359,6 +413,7 @@
 </html>
 
 <script src="../js/main.js"></script>
+
 <!-- Full cursor flemme-->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -451,7 +506,7 @@
         document.getElementById(galerieData.imgId).alt = images[index].alt;
         const captionEl = document.getElementById(galerieData.captionId);
         captionEl.innerText = images[index].caption || "";
-        const descEl = document.getElementById(galerieData.captionId+'-desc');
+        const descEl = document.getElementById(galerieData.captionId + '-desc');
         if (images[index].description && images[index].description.trim().length > 0) {
           descEl.style.display = "block";
           descEl.innerText = images[index].description;

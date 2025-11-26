@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="../css/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap"
+    rel="stylesheet">
 
   <link rel="icon" type="image/png" href="../images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon.svg" />
@@ -22,7 +24,7 @@
 
 <body>
 
-  
+
   <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
     <div class="flex w-full h-full">
       <div class="flex flex-row w-full h-full">
@@ -35,18 +37,33 @@
     </div>
   </div>
 
-  <a href="../index.html" class="flex flex-row items-center space-x-2 no-underline">
-    <div
-      class="fixed top-4 left-4 z-50 flex flex-row items-center bg-black backdrop-blur-sm shadow-lg px-4 py-2 hover:scale-105 transition-all">
-
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white"
-        stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+  <div class="fixed top-4 left-4 z-50 flex flex-row items-center gap-3">
+    <a href="../index.html" class="flex flex-row items-center space-x-2 no-underline">
+      <div
+        class="flex flex-row items-center bg-black backdrop-blur-sm shadow-lg px-4 py-2 hover:scale-105 transition-all">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="rubik-mono text-white font-bold text-[18px]">Accueil</span>
+      </div>
+    </a>
+    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+      class="flex items-center bg-black backdrop-blur-sm ml-2 cursor-pointer shadow-lg px-4 py-3 hover:scale-105 transition-all"
+      title="Retour en haut">
+      <svg fill="#ffffff" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve" stroke="#ffffff"
+        class="h-6 w-6">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <polygon
+            points="7,12 7,11 9,11 9,9 11,9 11,21 13,21 13,9 15,9 15,11 17,11 17,12 19,12 19,9 17,9 17,7 15,7 15,5 14,5 14,4 13,4 13,3 11,3 11,4 10,4 10,5 9,5 9,7 7,7 7,9 5,9 5,12 ">
+          </polygon>
+        </g>
       </svg>
-      <span class="rubik-mono text-white font-bold text-[18px]">Accueil</span>
-
-    </div>
-  </a>
+    </button>
+  </div>
 
 
 
@@ -61,122 +78,136 @@
     </div>
   </div>
 
-    
 
 
-<section>
-  <div class="w-full">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-20 bg-[#2D8FFF] w-full">
-      <div class="order-1 px-4 md:px-16 lazy-load-js">
-        <h2 class="border-l-2 border-white pl-5 text-3xl rubik-mono font-bold mb-4 text-white">Naissance du Rubik's Cube</h2>
-        <p class="text-lg text-white Montserrat">
-          Ernő Rubik est un inventeur et professeur hongrois né en 1944 à Budapest. Il est surtout célèbre pour avoir créé en <strong>1974</strong> le Rubik's Cube, 
-          un casse-tête devenu mondialement célèbre. Initialement appelé <strong>"cube magique"</strong>, ce puzzle a été breveté en 1975 par Rubik. Sa création visait 
-          à aider ses étudiants à comprendre la géométrie en 3D. Depuis sa commercialisation en 1980, le Rubik’s Cube a marqué l’histoire du jeu et 
-          fascine toujours des générations de passionnés.
-        </p>
-      </div>
-      <div class="order-2 flex justify-center px-4 md:px-16">
-        <img src="../images/imghistoire/ernorubik.webp" alt="erno rubik"
-          class="lazy-load-img w-full h-auto max-h-140 rounded-xl shadow-lg object-cover" />
-      </div>
-    </div>
-  </div>
 
-
-  <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
-    <div class="flex w-full h-full">
-      <div class="flex flex-row w-full h-full">
-        <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
-        <div class="flex-1 h-full" style="background-color: #7EDD3F;"></div>
-        <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
-        <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
-        <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
+  <section>
+    <div class="w-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-20 bg-[#2D8FFF] w-full">
+        <div class="order-1 px-4 md:px-16 lazy-load-js">
+          <h2 class="border-l-2 border-white pl-5 text-3xl rubik-mono font-bold mb-4 text-white">Naissance du Rubik's
+            Cube</h2>
+          <p class="text-lg text-white Montserrat">
+            Ernő Rubik est un inventeur et professeur hongrois né en 1944 à Budapest. Il est surtout célèbre pour avoir
+            créé en <strong>1974</strong> le Rubik's Cube,
+            un casse-tête devenu mondialement célèbre. Initialement appelé <strong>"cube magique"</strong>, ce puzzle a
+            été breveté en 1975 par Rubik. Sa création visait
+            à aider ses étudiants à comprendre la géométrie en 3D. Depuis sa commercialisation en 1980, le Rubik’s Cube
+            a marqué l’histoire du jeu et
+            fascine toujours des générations de passionnés.
+          </p>
+        </div>
+        <div class="order-2 flex justify-center px-4 md:px-16">
+          <img src="../images/imghistoire/ernorubik.webp" alt="erno rubik"
+            class="lazy-load-img w-full h-auto max-h-140 rounded-xl shadow-lg object-cover" />
+        </div>
       </div>
     </div>
-  </div>
 
 
-  <div class="w-full">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-12 bg-[#FF4040] w-full">
-      <div class="order-2 md:order-1 flex justify-center px-4 md:px-16 lazy-load-js ">
-        <img src="../images/imghistoire/rubikfirst.jpg" alt="le premier modèle de rubik cube"
-          class="lazy-load-img w-full h-auto max-h-96 rounded-xl shadow-lg object-cover" />
-      </div>
-      <div class="order-1 md:order-2 px-4 md:px-16 lazy-load-js">
-        <h2 class="border-l-2 border-white pl-5 text-3xl rubik-mono font-bold mb-4 text-white">Le premier modèle</h2>
-        <p class="text-lg text-white Montserrat ">
-          Le premier Rubik's Cube, créé en 1974, était constitué de <strong>27 petits cubes</strong> et fonctionnait grâce à un ingénieux mécanisme permettant à chaque face de tourner 
-          indépendamment. Appelé au départ "cube magique", ce prototype était en bois avec des autocollants de couleurs sur chaque face. Son but était de permettre l’étude 
-          des structures en 3D. Simple et robuste, ce modèle originel a rapidement séduit les étudiants de Rubik avant d’être commercialisé à grande échelle à partir de 1980.
-        </p>
+    <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
+      <div class="flex w-full h-full">
+        <div class="flex flex-row w-full h-full">
+          <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
+          <div class="flex-1 h-full" style="background-color: #7EDD3F;"></div>
+          <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
+          <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
+          <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
+        </div>
       </div>
     </div>
-  </div>
 
 
-  <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
-    <div class="flex w-full h-full">
-      <div class="flex flex-row w-full h-full">
-        <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
-        <div class="flex-1 h-full" style="background-color: #7EDD3F;"></div>
-        <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
-        <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
-        <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
+    <div class="w-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-12 bg-[#FF4040] w-full">
+        <div class="order-2 md:order-1 flex justify-center px-4 md:px-16 lazy-load-js ">
+          <img src="../images/imghistoire/rubikfirst.jpg" alt="le premier modèle de rubik cube"
+            class="lazy-load-img w-full h-auto max-h-96 rounded-xl shadow-lg object-cover" />
+        </div>
+        <div class="order-1 md:order-2 px-4 md:px-16 lazy-load-js">
+          <h2 class="border-l-2 border-white pl-5 text-3xl rubik-mono font-bold mb-4 text-white">Le premier modèle</h2>
+          <p class="text-lg text-white Montserrat ">
+            Le premier Rubik's Cube, créé en 1974, était constitué de <strong>27 petits cubes</strong> et fonctionnait
+            grâce à un ingénieux mécanisme permettant à chaque face de tourner
+            indépendamment. Appelé au départ "cube magique", ce prototype était en bois avec des autocollants de
+            couleurs sur chaque face. Son but était de permettre l’étude
+            des structures en 3D. Simple et robuste, ce modèle originel a rapidement séduit les étudiants de Rubik avant
+            d’être commercialisé à grande échelle à partir de 1980.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
 
-  <div class="w-full">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-12 bg-[#FFC800] w-full">
-      <div class="order-1 px-4 md:px-16 lazy-load-js">
-        <h2 class="border-l-2 border-white pl-5 text-3xl rubik-mono font-bold mb-4 text-white">La première compétition</h2>
-        <p class="text-lg text-white Montserrat lazy-load-js">
-          La première compétition officielle de Rubik's Cube a eu lieu à <strong>Budapest en 1982</strong>. Elle a réuni 19 participants de plusieurs pays. 
-          C’est l’Américain <strong>Minh Thai</strong> qui a remporté la victoire, résolvant le cube en <strong>22,95 secondes</strong>. Cet événement a marqué le début du speedcubing international, 
-          popularisant le Rubik's Cube à travers le monde.
-        </p>
-      </div>
-      <div class="order-2 flex justify-center px-4 md:px-16">
-        <img src="../images/imghistoire/premierecompet.jpg" alt="La première compétition rubik cube"
-          class="lazy-load-img w-full h-auto max-h-96 rounded-xl shadow-lg object-cover" />
+    <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
+      <div class="flex w-full h-full">
+        <div class="flex flex-row w-full h-full">
+          <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
+          <div class="flex-1 h-full" style="background-color: #7EDD3F;"></div>
+          <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
+          <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
+          <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
+        </div>
       </div>
     </div>
-  </div>
 
 
-  <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
-    <div class="flex w-full h-full">
-      <div class="flex flex-row w-full h-full">
-        <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
-        <div class="flex-1 h-full" style="background-color: #7EDD3F;"></div>
-        <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
-        <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
-        <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
+    <div class="w-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-12 bg-[#FFC800] w-full">
+        <div class="order-1 px-4 md:px-16 lazy-load-js">
+          <h2 class="border-l-2 border-white pl-5 text-3xl rubik-mono font-bold mb-4 text-white">La première compétition
+          </h2>
+          <p class="text-lg text-white Montserrat lazy-load-js">
+            La première compétition officielle de Rubik's Cube a eu lieu à <strong>Budapest en 1982</strong>. Elle a
+            réuni 19 participants de plusieurs pays.
+            C’est l’Américain <strong>Minh Thai</strong> qui a remporté la victoire, résolvant le cube en <strong>22,95
+              secondes</strong>. Cet événement a marqué le début du speedcubing international,
+            popularisant le Rubik's Cube à travers le monde.
+          </p>
+        </div>
+        <div class="order-2 flex justify-center px-4 md:px-16">
+          <img src="../images/imghistoire/premierecompet.jpg" alt="La première compétition rubik cube"
+            class="lazy-load-img w-full h-auto max-h-96 rounded-xl shadow-lg object-cover" />
+        </div>
       </div>
     </div>
-  </div>
 
 
-  <div class="w-full">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-12 bg-[#FF9940] w-full">
-      <div class="order-2 md:order-1 flex justify-center px-4 md:px-16 lazy-load-js">
-        <img src="../images/imghistoire/w3c.jpg" alt="image d'une salle de compétition w3c"
-          class="lazy-load-img w-full h-auto max-h-96 rounded-xl shadow-lg object-cover" />
-      </div>
-      <div class="order-1 md:order-2 px-4 md:px-16">
-        <h2 class=" border-l-2 border-white pl-5 text-3xl rubik-mono font-bold mb-4 text-white lazy-load-js">La WCA, Aujourd'hui</h2>
-        <p class="text-lg text-white Montserrat lazy-load-js">
-          La <strong>WCA (World Cube Association)</strong> gère aujourd'hui toutes les compétitions officielles de speedcubing dans le monde.  
-          Plus de <strong>100 000 joueurs</strong> ont déjà participé à une compétition WCA, et des centaines d’événements ont lieu chaque année sur tous les continents.  
-          Le speedcubing ne cesse de grandir, la communauté mondiale compte aujourd’hui des millions d’adeptes.  
-          Les compétitions accueillent parfois plus de <strong>1 000 participants</strong>, illustrant la passion mondiale pour le Rubik’s Cube et ses variantes.
-        </p>
+    <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
+      <div class="flex w-full h-full">
+        <div class="flex flex-row w-full h-full">
+          <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
+          <div class="flex-1 h-full" style="background-color: #7EDD3F;"></div>
+          <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
+          <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
+          <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+
+
+    <div class="w-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-12 bg-[#FF9940] w-full">
+        <div class="order-2 md:order-1 flex justify-center px-4 md:px-16 lazy-load-js">
+          <img src="../images/imghistoire/w3c.jpg" alt="image d'une salle de compétition w3c"
+            class="lazy-load-img w-full h-auto max-h-96 rounded-xl shadow-lg object-cover" />
+        </div>
+        <div class="order-1 md:order-2 px-4 md:px-16">
+          <h2 class=" border-l-2 border-white pl-5 text-3xl rubik-mono font-bold mb-4 text-white lazy-load-js">La WCA,
+            Aujourd'hui</h2>
+          <p class="text-lg text-white Montserrat lazy-load-js">
+            La <strong>WCA (World Cube Association)</strong> gère aujourd'hui toutes les compétitions officielles de
+            speedcubing dans le monde.
+            Plus de <strong>100 000 joueurs</strong> ont déjà participé à une compétition WCA, et des centaines
+            d’événements ont lieu chaque année sur tous les continents.
+            Le speedcubing ne cesse de grandir, la communauté mondiale compte aujourd’hui des millions d’adeptes.
+            Les compétitions accueillent parfois plus de <strong>1 000 participants</strong>, illustrant la passion
+            mondiale pour le Rubik’s Cube et ses variantes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer class="bg-black pt-3">
 
@@ -212,22 +243,27 @@
             <a href="#top" class="decoration-none text-white hover:text-[#FEB21A] Montserrat">Histoire</a>
           </li>
           <li>
-            <a href="../pages/articles.html" class="decoration-none text-white hover:text-[#009B48] Montserrat">Articles</a>
+            <a href="../pages/articles.html"
+              class="decoration-none text-white hover:text-[#009B48] Montserrat">Articles</a>
           </li>
           <li>
-            <a href="../pages/galerie.html" class="decoration-none text-white hover:text-[#E00000] Montserrat">galerie</a>
+            <a href="../pages/galerie.html"
+              class="decoration-none text-white hover:text-[#E00000] Montserrat">galerie</a>
           </li>
           <li>
-            <a href="../pages/interviews.html" class="decoration-none text-white hover:text-[#FF5900] Montserrat">Interviews</a>
+            <a href="../pages/interviews.html"
+              class="decoration-none text-white hover:text-[#FF5900] Montserrat">Interviews</a>
           </li>
           <li>
             <a href="../pages/audio.html" class="decoration-none text-white hover:text-[#009B48] Montserrat">Audio</a>
           </li>
           <li>
-            <a href="../pages/epreuves.html" class="decoration-none text-white hover:text-[#E3E3E3] Montserrat">Epreuves</a>
+            <a href="../pages/epreuves.html"
+              class="decoration-none text-white hover:text-[#E3E3E3] Montserrat">Epreuves</a>
           </li>
           <li>
-            <a href="../pages/Infographie.html" class="decoration-none text-white hover:text-[#009B48] Montserrat">Infographie</a>
+            <a href="../pages/Infographie.html"
+              class="decoration-none text-white hover:text-[#009B48] Montserrat">Infographie</a>
           </li>
 
         </ul>
@@ -252,7 +288,8 @@
               class="decoration-none text-white hover:text-[#FFD500] Montserrat" target="_blank">JavaScript</a>
           </li>
           <li>
-            <a href="https://gsap.com/" class="decoration-none text-white hover:text-[#0045AD] Montserrat" target="_blank">GSAP</a>
+            <a href="https://gsap.com/" class="decoration-none text-white hover:text-[#0045AD] Montserrat"
+              target="_blank">GSAP</a>
           </li>
 
         </ul>
@@ -289,13 +326,12 @@
 <script src="https://assets.codepen.io/16327/ScrambleTextPlugin3.min.js"></script>
 
 <script>
-window.onload = function() {
-gsap.to("#titreanimgsap", 1.5, {
-  scrambleText: {
-    text: "Histoire",
-    rightToLeft: true,
+  window.onload = function () {
+    gsap.to("#titreanimgsap", 1.5, {
+      scrambleText: {
+        text: "Histoire",
+        rightToLeft: true,
+      }
+    });
   }
-});
-}
 </script>
-

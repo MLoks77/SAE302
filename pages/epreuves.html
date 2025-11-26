@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="../css/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap"
+    rel="stylesheet">
 
   <link rel="icon" type="image/png" href="../images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon.svg" />
@@ -22,7 +24,7 @@
 
 <body>
 
-  
+
   <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
     <div class="flex w-full h-full">
       <div class="flex flex-row w-full h-full">
@@ -35,18 +37,33 @@
     </div>
   </div>
 
-  <a href="../index.html" class="flex flex-row items-center space-x-2 no-underline">
-    <div
-      class="fixed top-4 left-4 z-50 flex flex-row items-center bg-black backdrop-blur-sm shadow-lg px-4 py-2 hover:scale-105 transition-all">
-
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white"
-        stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+  <div class="fixed top-4 left-4 z-50 flex flex-row items-center gap-3">
+    <a href="../index.html" class="flex flex-row items-center space-x-2 no-underline">
+      <div
+        class="flex flex-row items-center bg-black backdrop-blur-sm shadow-lg px-4 py-2 hover:scale-105 transition-all">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+        <span class="rubik-mono text-white font-bold text-[18px]">Accueil</span>
+      </div>
+    </a>
+    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+      class="flex items-center bg-black ml-2 cursor-pointer backdrop-blur-sm shadow-lg px-4 py-3 hover:scale-105 transition-all"
+      title="Retour en haut">
+      <svg fill="#ffffff" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve" stroke="#ffffff"
+        class="h-6 w-6">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <polygon
+            points="7,12 7,11 9,11 9,9 11,9 11,21 13,21 13,9 15,9 15,11 17,11 17,12 19,12 19,9 17,9 17,7 15,7 15,5 14,5 14,4 13,4 13,3 11,3 11,4 10,4 10,5 9,5 9,7 7,7 7,9 5,9 5,12 ">
+          </polygon>
+        </g>
       </svg>
-      <span class="rubik-mono text-white font-bold text-[18px]">Accueil</span>
-
-    </div>
-  </a>
+    </button>
+  </div>
 
   <!-- landing  -->
   <div class="flex items-center justify-center h-screen">
@@ -58,16 +75,19 @@
     </div>
   </div>
 
-    
+
 
 
   <section class="bg-[#FFE646] py-25">
     <div class="mx-[5%] md:mx-[25%]">
-      <h1 class="border-l-2 border-black mb-3 pl-5 rubik-mono text-left text-[25px]">Comment se déroule une compétition ?</h1>
+      <h1 class="border-l-2 border-black mb-3 pl-5 rubik-mono text-left text-[25px]">Comment se déroule une compétition
+        ?</h1>
       <p class="leading-relaxed Montserrat">
         Lors d'une compétition officielle, les concurrents s'inscrivent et apportent leurs propres rubik cube, qui
-        seront mélangés par des <strong><em>scramblers</em></strong>. <br>Chaque épreuve est supervisée par des juges, un délégué officiel de
-        la<strong> WCA (World Cube Association)</strong> et une équipe d'organisation qui veille à la bonne application des
+        seront mélangés par des <strong><em>scramblers</em></strong>. <br>Chaque épreuve est supervisée par des juges,
+        un délégué officiel de
+        la<strong> WCA (World Cube Association)</strong> et une équipe d'organisation qui veille à la bonne application
+        des
         règles. Les
         compétiteurs effectuent leurs essais sur appel, respectent un temps limite, et leurs résultats sont enregistrés
         et validés immédiatement. L'ambiance est sérieuse mais conviviale, et les officiels et concurrents peuvent
@@ -184,7 +204,11 @@
             <div class="ml-3">
               <h2 class="text-xl font-bold rubik-mono">Méthodes de résolution variées</h2>
               <p class="text-base Montserrat">
-                Le 3x3 peut être résolu grâce à différentes méthodes reconnues, comme <a class="underline" href="https://www.speedcubingtips.eu/methode-cfop" target="_blank">CFOP</a>, <a class="underline" href="https://www.speedcubingtips.eu/methode-de-resolution-roux" target="_blank">Roux</a> ou <a class="underline" href="https://www.speedcubingtips.eu/methode-zz" target="_blank">ZZ</a>. Chacune possède
+                Le 3x3 peut être résolu grâce à différentes méthodes reconnues, comme <a class="underline"
+                  href="https://www.speedcubingtips.eu/methode-cfop" target="_blank">CFOP</a>, <a class="underline"
+                  href="https://www.speedcubingtips.eu/methode-de-resolution-roux" target="_blank">Roux</a> ou <a
+                  class="underline" href="https://www.speedcubingtips.eu/methode-zz" target="_blank">ZZ</a>. Chacune
+                possède
                 ses propres techniques, algorithmes et stratégies pour optimiser les mouvements et gagner en rapidité.
                 Le
                 choix de la méthode dépend du style du cuber et de ses objectifs, mais toutes exigent de la pratique, de
@@ -388,16 +412,20 @@
             <a href="../index.html" class="decoration-none text-white hover:text-[#0045AD] Montserrat">Accueil</a>
           </li>
           <li>
-            <a href="../pages/histoire.html" class="decoration-none text-white hover:text-[#E3E3E3] Montserrat">Histoire</a>
+            <a href="../pages/histoire.html"
+              class="decoration-none text-white hover:text-[#E3E3E3] Montserrat">Histoire</a>
           </li>
           <li>
-            <a href="../pages/articles.html" class="decoration-none text-white hover:text-[#009B48] Montserrat">Articles</a>
+            <a href="../pages/articles.html"
+              class="decoration-none text-white hover:text-[#009B48] Montserrat">Articles</a>
           </li>
           <li>
-            <a href="../pages/galerie.html" class="decoration-none text-white hover:text-[#E00000] Montserrat">galerie</a>
+            <a href="../pages/galerie.html"
+              class="decoration-none text-white hover:text-[#E00000] Montserrat">galerie</a>
           </li>
           <li>
-            <a href="../pages/interviews.html" class="decoration-none text-white hover:text-[#FF5900] Montserrat">Interviews</a>
+            <a href="../pages/interviews.html"
+              class="decoration-none text-white hover:text-[#FF5900] Montserrat">Interviews</a>
           </li>
           <li>
             <a href="../pages/audio.html" class="decoration-none text-white hover:text-[#009B48] Montserrat">Audio</a>
@@ -406,7 +434,8 @@
             <a href="#top" class="decoration-none text-white hover:text-[#FEB21A] Montserrat">Epreuves</a>
           </li>
           <li>
-            <a href="../pages/Infographie.html" class="decoration-none text-white hover:text-[#009B48] Montserrat">Infographie</a>
+            <a href="../pages/Infographie.html"
+              class="decoration-none text-white hover:text-[#009B48] Montserrat">Infographie</a>
           </li>
         </ul>
       </div>
@@ -430,7 +459,8 @@
               class="decoration-none text-white hover:text-[#FFD500] Montserrat" target="_blank">JavaScript</a>
           </li>
           <li>
-            <a href="https://gsap.com/" class="decoration-none text-white hover:text-[#0045AD] Montserrat" target="_blank">GSAP</a>
+            <a href="https://gsap.com/" class="decoration-none text-white hover:text-[#0045AD] Montserrat"
+              target="_blank">GSAP</a>
           </li>
         </ul>
       </div>
@@ -576,12 +606,12 @@
 <script src="https://assets.codepen.io/16327/ScrambleTextPlugin3.min.js"></script>
 
 <script>
-window.onload = function() {
-gsap.to("#titreanimgsap", 1.5, {
-  scrambleText: {
-    text: "Epreuves",
-    rightToLeft: true,
+  window.onload = function () {
+    gsap.to("#titreanimgsap", 1.5, {
+      scrambleText: {
+        text: "Epreuves",
+        rightToLeft: true,
+      }
+    });
   }
-});
-}
 </script>
