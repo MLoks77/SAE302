@@ -50,3 +50,8 @@
   font-size: 125px;
 }
 
+@media (min-width: 2400px) {
+  .text-\[150px\] {
+    font-size: 150px;
+  }
+}
