@@ -24,88 +24,75 @@
 
 <body>
 
-
-  <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
-    <div class="flex w-full h-full">
-      <div class="flex flex-row w-full h-full">
-        <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
-        <div class="flex-1 h-full" style="background-color: #008000;"></div>
-        <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
-        <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
-        <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
+  <div>
+    <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
+      <div class="flex w-full h-full">
+        <div class="flex flex-row w-full h-full">
+          <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
+          <div class="flex-1 h-full" style="background-color: #008000;"></div>
+          <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
+          <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
+          <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="fixed top-4 left-4 z-50 flex flex-row items-center gap-3">
-    <a href="../index.html" class="border-white border flex flex-row items-center space-x-2 no-underline">
-      <div
-        class="flex flex-row items-center bg-black backdrop-blur-sm shadow-lg px-4 py-2 hover:scale-105 transition-all">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white"
-          stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+    <div class="fixed top-4 left-4 z-50 flex flex-row items-center gap-3">
+      <a href="../index.html" class="flex flex-row items-center space-x-2 no-underline border-white border">
+        <div
+          class="flex flex-row items-center bg-black cursor-pointer backdrop-blur-sm shadow-lg px-4 py-2 hover:scale-105 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="white"
+            stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+          <span class="rubik-mono text-white font-bold text-[18px]">Accueil</span>
+        </div>
+      </a>
+      <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+        class="flex border-white border cursor-pointer items-center bg-black backdrop-blur-sm shadow-lg px-4 py-3 hover:scale-105 transition-all"
+        title="Retour en haut">
+        <svg fill="#ffffff" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve" stroke="#ffffff"
+          class="h-6 w-6">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <polygon
+              points="7,12 7,11 9,11 9,9 11,9 11,21 13,21 13,9 15,9 15,11 17,11 17,12 19,12 19,9 17,9 17,7 15,7 15,5 14,5 14,4 13,4 13,3 11,3 11,4 10,4 10,5 9,5 9,7 7,7 7,9 5,9 5,12 ">
+            </polygon>
+          </g>
         </svg>
-        <span class="rubik-mono text-white font-bold text-[18px]">Accueil</span>
+      </button>
+      <button id="hoverbtn" data-tooltip-target="tooltip-right"
+        class="select-none border-white border bg-black py-3 px-4 cursor-pointer text-center font-sans text-xs font-bold uppercase text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" class="h-6 w-6 inline">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+              stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M9 9C9 5.49997 14.5 5.5 14.5 9C14.5 11.5 12 10.9999 12 13.9999" stroke="#ffffff" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M12 18.01L12.01 17.9989" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round"></path>
+          </g>
+        </svg>
+      </button>
+    </div>
+
+    <!-- landing  -->
+    <div class="flex items-center justify-center h-screen">
+      <video autoplay muted loop class="right-0 bottom-0 min-w-full min-h-full object-cover z-0">
+        <source src="../images/videos/accueil_cut.mp4" type="video/mp4">
+      </video>
+      <div class="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
+        <h1 id="titreanimgsap" class="rubik-mono font-bold text-[50px] md:text-[100px] lg:text-[150px]">Statistiques
+        </h1>
       </div>
-    </a>
-    <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-      class="border-white border flex items-center bg-black ml-2 cursor-pointer backdrop-blur-sm shadow-lg px-4 py-3 hover:scale-105 transition-all"
-      title="Retour en haut">
-      <svg fill="#ffffff" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" xml:space="preserve" stroke="#ffffff"
-        class="h-6 w-6">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-        <g id="SVGRepo_iconCarrier">
-          <polygon
-            points="7,12 7,11 9,11 9,9 11,9 11,21 13,21 13,9 15,9 15,11 17,11 17,12 19,12 19,9 17,9 17,7 15,7 15,5 14,5 14,4 13,4 13,3 11,3 11,4 10,4 10,5 9,5 9,7 7,7 7,9 5,9 5,12 ">
-          </polygon>
-        </g>
-      </svg>
-    </button>
-    <button id="hoverbtn" data-tooltip-target="tooltip-right"
-      class="border-white border select-none ml-2 bg-black py-3 px-4 text-center font-sans cursor-pointer text-xs font-bold uppercase text-white shadow-md transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" class="h-6 w-6 inline">
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-        <g id="SVGRepo_iconCarrier">
-          <path
-            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-          <path d="M9 9C9 5.49997 14.5 5.5 14.5 9C14.5 11.5 12 10.9999 12 13.9999" stroke="#ffffff" stroke-width="1.5"
-            stroke-linecap="round" stroke-linejoin="round"></path>
-          <path d="M12 18.01L12.01 17.9989" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
-            stroke-linejoin="round"></path>
-        </g>
-      </svg>
-    </button>
-  </div>
-
-  <!-- landing  -->
-  <div class="flex items-center justify-center h-screen">
-    <video autoplay muted loop class="right-0 bottom-0 min-w-full min-h-full object-cover z-0">
-      <source src="../images/videos/accueil_cut.mp4" type="video/mp4">
-    </video>
-    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-      <h1 id="titreanimgsap" class="text-[60px] md:text-[100px] lg:text-[170px] font-bold rubik-mono">Statistiques</h1>
     </div>
   </div>
 
-
-  <!-- version plus grande, a voir on préfère lequel -->
-
-  <!-- <div class="w-full"> 
-      <img src="../images/infographie/info0.webp" alt="Bannière des épreuves" class="w-full h-auto object-cover block mx-auto" />
-    </div>
-    <div class="w-full">
-      <img src="../images/infographie/info1.webp" alt="Bannière des épreuves" class="w-full h-auto object-cover block mx-auto" />
-    </div>
-    <div class="w-full">
-      <img src="../images/infographie/info2.webp" alt="Bannière des épreuves" class="w-full h-auto object-cover block mx-auto" />
-    </div>
-    <div class="w-full">
-      <img src="../images/infographie/info3.webp" alt="Bannière des épreuves" class="w-full h-auto object-cover block mx-auto" />
-    </div> -->
   <section class="bg-black py-12">
     <div class="w-full flex flex-col items-center gap-0 py-12">
       <img src="../images/infographie/info0.webp"
@@ -231,6 +218,7 @@
 <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
 <script src="https://assets.codepen.io/16327/ScrambleTextPlugin3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 <script>
   window.onload = function () {
     gsap.to("#titreanimgsap", 1.5, {
