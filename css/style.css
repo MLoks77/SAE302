@@ -182,6 +182,18 @@
   z-index: 50;
 }
 
+@media (max-width: 768px) {
+  #hoverbtn[data-tooltip-target="tooltip-right"]::after {
+    left: 0;
+    top: 125%;
+    transform: none;
+    white-space: normal;
+    width: 250px;
+    max-width: calc(100vw - 32px);
+    text-align: left;
+  }
+}
+
 #hoverbtn[data-tooltip-target="tooltip-right"]:hover::after,
 #hoverbtn[data-tooltip-target="tooltip-right"]:focus::after {
   opacity: 1;

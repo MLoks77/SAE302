@@ -92,7 +92,7 @@
   </div>
 
 
-  <!-- Gallerie cachée pour le carousel (sera affichée en JS plus tard) -->
+  <!-- Gallerie cachée pour le carousel -->
   <div class="w-full py-22 lazy-load-js hidden" id="galerie1">
     <div class="max-w-6xl mx-auto px-4 md:px-0">
       <!-- Gallerie caché n°1 -->
@@ -307,7 +307,8 @@
 
       <div class="flex items-center mb-12">
         <hr class="flex-1 border-gray-600">
-        <h2 class="text-3xl rubik-mono font-bold mx-6 text-center text-[#212121] lazy-load-js lazy-load-img">LA TROUSSE DU SPEEDCUBER</h2>
+        <h2 class="text-3xl rubik-mono font-bold mx-6 text-center text-[#212121] lazy-load-js lazy-load-img">LA TROUSSE
+          DU SPEEDCUBER</h2>
         <hr class="flex-1 border-gray-600">
       </div>
 
@@ -319,7 +320,8 @@
               sm:grid-cols-3 sm:grid-rows-3
               md:grid-cols-4 md:grid-rows-3
             ">
-            <figure class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white col-span-2 md:col-span-2 flex flex-col">
+            <figure
+              class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white col-span-2 md:col-span-2 flex flex-col">
               <img src="../images/imggallerie/cube4.webp" alt="Une rangée de cube"
                 class="w-full h-full object-fill hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="Une rangée de cube" data-description="Du 3x3 au 7x7" />
@@ -352,26 +354,30 @@
                 data-description="Malgré l'augmentation du nombre de tranches, la taille du cube reste la même." /><!-- droite -->
               <figcaption class="text-center py-8 text-[15px] text-gray-600 rubik-mono">La tour de cube</figcaption>
             </figure>
-            <figure class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-2 md:row-start-2 flex flex-col">
+            <figure
+              class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-2 md:row-start-2 flex flex-col">
               <img src="../images/imggallerie/cube5.webp" alt="pyraminx"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="pyraminx"
                 data-description="Un cube pyraminx. Forme triangulaire, résolution intéressante." />
               <figcaption class="text-center py-4 text-[15px] text-gray-600 rubik-mono">Cube pyraminx</figcaption>
             </figure>
-            <figure class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-3 md:row-start-2 flex flex-col">
+            <figure
+              class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-3 md:row-start-2 flex flex-col">
               <img src="../images/imggallerie/cube6.webp" alt="megaminx"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="megaminx" data-description="Cube megaminx. Dodécagone avec 12 faces uniques." />
               <figcaption class="text-center py-4 text-[15px] text-gray-600 rubik-mono">Cube megaminx</figcaption>
             </figure>
-            <figure class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-2 md:row-start-3 flex flex-col">
+            <figure
+              class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-2 md:row-start-3 flex flex-col">
               <img src="../images/imggallerie/cube7.webp" alt="FTO"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="FTO" data-description="Cube FTO. Axes de rotation diagonaux, un défi pour les experts." />
               <figcaption class="text-center py-4 text-[15px] text-gray-600 rubik-mono">Cube FTO</figcaption>
             </figure>
-            <figure class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-3 md:row-start-3 flex flex-col">
+            <figure
+              class="lazy-load-js lazy-load-img overflow-hidden rounded-xl shadow-lg bg-white md:col-start-3 md:row-start-3 flex flex-col">
               <img src="../images/imggallerie/cube1.webp" alt="Cube mirror 3x3"
                 class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy"
                 data-caption="Cube mirror 3x3"
@@ -572,9 +578,9 @@
           <img id="${galerieData.imgId}" src="" alt="Image Zoomée"
             style="max-width:90vw; max-height:76vh; border-radius:24px; box-shadow:0 0 30px #000; object-fit:contain; transition: transform 0.3s;" />
           <div id="${galerieData.captionId}"
-               style="margin-top:18px;text-align:center;color:#FFF;font-size:1.2rem;padding:0.25em 1em;max-width:80vw;white-space:pre-wrap;word-break:break-word;line-height:1.25;border-radius:1em;background:rgba(25,25,25,0.7);backdrop-filter:blur(2px);font-family:'Rubik Mono One',monospace;font-weight:400;"></div>
+               style="margin-top:18px;text-align:center;color:#FFF;font-size:1.2rem;padding:0.25em 1em;max-width:80vw;white-space:pre-wrap;word-break:break-word;line-height:1.25;background:rgba(25,25,25,0.7);backdrop-filter:blur(2px);font-family:'Rubik Mono One',monospace;font-weight:400;"></div>
           <div id="${galerieData.captionId}-desc"
-               style="display:none; margin-top:15px;text-align:center;color:#EEE;font-size:1rem;padding:0.7em 1em;max-width:68vw;white-space:pre-wrap;word-break:break-word;line-height:1.5;border-radius:1em;background:rgba(30,30,30,0.86);backdrop-filter:blur(2px);font-family:'Montserrat',monospace;font-weight:400;"></div>
+               style="display:none; margin-top:15px;text-align:center;color:#EEE;font-size:1rem;padding:0.7em 1em;max-width:68vw;white-space:pre-wrap;word-break:break-word;line-height:1.5;background:rgba(30,30,30,0.86);backdrop-filter:blur(2px);font-family:'Montserrat',monospace;font-weight:400;"></div>
         </div>
         <button id="${galerieData.nextBtnId}" style="position:absolute;right:40px;top:50%;transform:translateY(-50%);font-size:50px;color:#fff;background:none;border:none;cursor:pointer;z-index:10;">&#10095;</button>
       `;
