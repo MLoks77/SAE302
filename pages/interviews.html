@@ -25,14 +25,14 @@
 <body class="bg-black">
 
 
-  <div class="w-full h-6 relative z-10 -my-3">
+  <div class="w-full h-6 relative z-10" style="margin-bottom:-12px; margin-top:-12px;">
     <div class="flex w-full h-full">
       <div class="flex flex-row w-full h-full">
-        <div class="flex-1 h-full bg-[#0000FF]"></div>
-        <div class="flex-1 h-full bg-[#008000]"></div>
-        <div class="flex-1 h-full bg-[#FF0000]"></div>
-        <div class="flex-1 h-full bg-[#FFA500]"></div>
-        <div class="flex-1 h-full bg-[#FFFF00]"></div>
+        <div class="flex-1 h-full" style="background-color: #0000FF;"></div>
+        <div class="flex-1 h-full" style="background-color: #008000;"></div>
+        <div class="flex-1 h-full" style="background-color: #FF0000;"></div>
+        <div class="flex-1 h-full" style="background-color: #FFA500;"></div>
+        <div class="flex-1 h-full" style="background-color: #FFFF00;"></div>
       </div>
     </div>
   </div>
@@ -107,7 +107,7 @@
             class="bg-[#2D8FFF] p-2 rounded"></iframe>
         </div>
       </div>
-      <div class="flex flex-col items-start lazy-load-js img.lazy-load-img p-6">
+      <div class="flex flex-col items-start lazy-load-js img.lazy-load-img p-6 mt-6 md:justify-center">
         <h1 class="border-l-2 border-white pl-3 text-xl md:text-2xl text-white rubik-mono font-bold mb-4">
           La marmite, Chevry-Cossigny
         </h1>
@@ -116,35 +116,37 @@
           <strong>Marmite</strong>, à Chevry-Cossigny. Lors de la compétition de <strong>Chevry-Miel 2025</strong>,
           76 speedcubeurs se sont affrontés. Nous avons recueilli pour vous de nombreux témoignages.
         </p>
-        <a href="https://maps.app.goo.gl/5TSeuwEb2St41c1y6" target="_blank"
-          class="mt-6 inline-flex items-center px-6 py-2 rounded-[22px] border-4 border-white bg-black transition-transform hover:scale-90"
-          style="box-shadow: 2px 4px 0px 2px #fff, 4px 8px 0px 3px #222;">
-          <span class="inline-flex items-center bg-white rounded-[18px] px-5 py-1.5 text-black text-xl Montserrat">
-            <svg fill="#000000" height="22px" width="22px" viewBox="0 0 24 24" class="mr-2">
-              <path
-                d="M12,1c-4.97,0-9,4.03-9,9c0,6.75,9,13,9,13s9-6.25,9-13C21,5.03,16.97,1,12,1z M12,13c-1.66,0-3-1.34-3-3s1.34-3,3-3 s3,1.34,3,3S13.66,13,12,13z">
-              </path>
-            </svg>
-            Chevry-Cossigny
-          </span>
-        </a>
+        <div class="w-full flex justify-center md:justify-start mt-8 md:mt-16 mb-12 md:mb-0">
+          <a href="https://maps.app.goo.gl/5TSeuwEb2St41c1y6" target="_blank"
+            class="inline-flex items-center px-6 py-3 md:py-2 rounded-[22px] border-4 border-white bg-black transition-transform hover:scale-90"
+            style="box-shadow: 2px 4px 0px 2px #fff, 4px 8px 0px 3px #222;">
+            <span class="inline-flex items-center bg-white rounded-[18px] px-5 py-1.5 text-black text-xl Montserrat">
+              <svg fill="#000000" height="22px" width="22px" viewBox="0 0 24 24" class="mr-2">
+                <path
+                  d="M12,1c-4.97,0-9,4.03-9,9c0,6.75,9,13,9,13s9-6.25,9-13C21,5.03,16.97,1,12,1z M12,13c-1.66,0-3-1.34-3-3s1.34-3,3-3 s3,1.34,3,3S13.66,13,12,13z">
+                </path>
+              </svg>
+              Chevry-Cossigny
+            </span>
+          </a>
+        </div>
       </div>
     </section>
 
     <section id="section2" class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
       <!-- 2. Alexis : Texte / Vidéo -->
-      <div class="flex flex-col items-start lazy-load-js img.lazy-load-img p-6">
+      <div class="flex flex-col items-start lazy-load-js img.lazy-load-img p-6 order-2 md:order-1">
         <h1 class="border-l-2 border-white pl-3 text-xl md:text-2xl text-white rubik-mono font-bold mb-4">
           Alexis Tremellat, l'organisateur
         </h1>
-        <p class="text-[20px] text-white Montserrat">
+        <p class="text-[20px] text-white Montserrat mb-12 md:mb-0">
           Alexis nous raconte ce qui l’a amené à entreprendre <strong>l’organisation de sa propre
             compétition.</strong><br><br>
           De ses 8 ans à aujourd’hui, il nous parle de son histoire, de la parité homme-femme dans le speedcubing,
           ainsi que des défis du rôle d’organisateur.
         </p>
       </div>
-      <div class="lazy-load-js img.lazy-load-img w-full p-6">
+      <div class="lazy-load-js img.lazy-load-img w-full p-6 order-1 md:order-2">
         <div style="padding:56.25% 0 0 0;position:relative;width:100%;">
           <iframe
             src="https://player.vimeo.com/video/1141558434?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
